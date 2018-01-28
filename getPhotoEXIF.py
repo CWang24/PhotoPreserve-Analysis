@@ -6,7 +6,7 @@ from geopy.geocoders import Nominatim
 #'EXIF DateTimeOriginal', 'Image Orientation', 'MakerNote FocusMode'
 
 def HHMMSS2degree(x):
-  #transform the format of longitude and latitude from hr, min, sec to degree.
+	#transform the format of longitude and latitude from hr, min, sec to degree.
 	x[0]=int(x[0])
 	x[1]=int(x[1])
 	x[2] = int(x[2].split('/')[0])/int(x[2].split('/')[1])
